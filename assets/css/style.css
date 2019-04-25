@@ -165,7 +165,42 @@ pas plus compliqué que ça.
 
     et possible d'éliminer une ombre présente:
     -shadow-none
-    
+
+
+    /////////////////////////
+    ///   LES BORDURESS   ///
+    /////////////////////////
+
+    -   border
+    -   border-top
+    -   border-right
+    -   border-left
+    -   border-bottom
+
+    Je peux aussi retirer des bordures
+    -   border-0
+    -   border-top-0
+    -   border-left-0
+    -   border-right-0
+    -   border-bottom-0
+
+    Je peux rajouter de la couleur à ma bordure:
+
+    -   border-primary
+    -   border-warning
+    ...
+    ...
+
+    Les border-radius sont inclus de cette manière:
+
+    -   rounded
+    -   rounded-top
+    -   rounded-right
+    -   rounded-bottom
+    -   rounded-left
+    -   rounded-circle -> en forme de rond
+    -   rounded-pill -> en forme de pillule
+
 
 
 
