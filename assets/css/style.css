@@ -201,7 +201,38 @@ pas plus compliqué que ça.
     -   rounded-circle -> en forme de rond
     -   rounded-pill -> en forme de pillule
 
+    ///////////////////////////////////////
+    ///  RENDRE LES IFRAME RESPONSIVE   ///
+    //////////////////////////////////////
 
+    Quand on utilise un iframe, le contenu n'est pas responsive
+    une classe boostrap peut nous aider.
+
+    on va créer une div à l'exterieur de notre iframe et on va appeler la classe:
+
+    -   embed-responsive
+
+    voir sur mon index html
+    en cas de video youtube comme c'est le cas ici, il faut rajouter le ratio de la vidéo:
+
+    -   embed-responsive-21by9
+    -   embed-responsive-16by9
+    -   embed-responsive-4by3
+    -   embed-responsive-1by1
+
+    quand la classe est définie dans ma div, je dois rajouter la classe
+
+    -   embed-responsive-item
+
+    pour appliquer cette reposivité forcée
+
+    RECAP:
+
+    <div class="embed-responsive embed-responsive-16by9>
+        <iframe class="embed-responsive-item"> </iframe>
+    </div>
+
+    --> comme ça tout fonctionne !!!
 
 
 */
