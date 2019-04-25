@@ -95,6 +95,77 @@ pb-3
 ...
 
 
+///////////////////////////////////
+//  L'ALIGNEMENT AVEC BOOTSTRAP  //
+///////////////////////////////////
+
+- Les float
+    float-left
+    float-right
+    float-none
+pas plus compliqué que ça.
+
+- les elements block et inline
+    d-block -> élément l'un en dessous des autres
+    d-inline -> l'un a coté de l'autre
+    d-none -> retirer toute trace
+
+
+-les éléments cachés
+    overflow-auto -> gérer des barre de défilement
+    overflow-hidden->cache tout ce qui est à l'éxterieur de l'élément
+
+
+-les positions
+    position-static
+    position-relative
+    position-absolute
+    position-fixed
+    position-sticky-> changer la position d'un élément quand il passe sous le scroll de la page
+
+////////////////////////////////////////
+//   LES CLASSES SPECIALES BOOTSTRAP ///
+////////////////////////////////////////
+
+    fixed-top-> fixer l'élement au dessous
+    fixed-bottom -> fixer en dessous.
+    sticky-top (que je vais placer sur mon message site en construction sur ma page démo
+
+
+
+    /////////////////////////////////
+    ///   LES CLASSES DE TEXTES   ///
+    /////////////////////////////////
+
+    -   text-left
+    -   text-rigth
+    -   text-center
+
+    -   text-lowercase-> tout en minuscule
+    -   text-uppercase-> tout en majuscule
+    -   text-capîtalize
+
+    -   font-weigth-blod -> caractère gras
+    -   font-weigth-light-> affiner le texte
+    -   font-weigth-normal
+
+    -   font-italic
+
+
+
+    ////////////////////////////////////////////////
+    ///   LES CLASSES POUR RAJOUTER DES OMBRES   ///
+    ////////////////////////////////////////////////
+
+    3 types de grandeur d'ombres
+
+    -   shadow-sm
+    -   shadow
+    -   shadow-lg
+
+    et possible d'éliminer une ombre présente:
+    -shadow-none
+    
 
 
 
