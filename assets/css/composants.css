@@ -1,0 +1,171 @@
+/*
+
+///////////////////////
+///   LES BOUTONS   ///
+///////////////////////
+
+Les classe couleurs sont toujours d'actualité, pour configurer un bouton, on fait
+
+    <button type="button" class="btn btn-primary"> Texte du bouton </button>
+Eventuellement plaquer le texte du bouton dans une balise <a></a>
+
+les autres couleurs:
+    -   btn-secondary
+    -   btn-success
+    -   btn-danger
+    -   btn-warning
+    -   btn-info
+    -   btn-light
+    -   btn-dark
+
+bouton particulier:
+
+    -   btn-link
+
+on peut donner la classe bouton à un balise <a> ou <input>
+
+<a class="btn btn-primary" href="#" role="button">Link</a>
+<input class="btn btn-primary" type="button" value="Input">
+
+avec la classe "outline", on peut créer un bouton sans background. Le texte et les contours du
+bouton seront visible et et seront de la couleur ciblée
+
+    -   btn-outline-danger
+    -   btn-outline-secondary
+    -   btn-outline-warning
+
+    ... ... 
+
+avec la classe "lg" on obtien un bouton large
+
+    -   btn-lg
+
+avec la classe "sm" on obtien un bouton small:
+
+    -   btn-sm
+
+avec la classe block, j'aurai un bouton qui prendra la largeur attribué au block dans lequel il se trouve
+
+    -   btn-block
+
+///////////////////////
+///   LES ALERTES   ///
+///////////////////////
+
+avec la classe alert, nous allons pouvoir attirer l'attention de notre visiteur sur un élément de notre page
+on reprends les classiques codes couleurs
+exemple:
+
+    <div class="alert alert-primary" role="alert">
+        une div alerte classique
+    </div>
+
+je peux claquer dans ma div, une balise <a> dans laquelle je peux claquer une class "alert-link".
+selon la couleur que j'aurai choisie pour ma div, la div <a> aura une couleur adaptée
+
+    <div class="alert alert-primary" role="alert">
+        une div alerte classique <a href="#" class="alert-link">avec un lien </a> à la colorimétrie adaptée
+    </div>
+
+
+Toujours plus loin, on peut structurer notre alerte, sur une balise <hx>; on peut inclure la classe "alert-heading" et créer un petit truc 
+vraiment sympa
+
+    <div class="alert alert-success" role="alert">
+        <h2 class="alert-heading">contenu</h2>
+    </div>
+    (voir sur la feuille html jusque ou on peut pousser le bouzin)
+
+
+///////////////////////
+///   LES NAVBAR    ///
+///////////////////////
+
+JE VAIS VOIR DEUX TYPES DE NAVBAR, je reviendrai sur toutes ses possibilités sur une autre feuille html/css
+quand j'aborderai les menus (conjointement avec javascript)
+
+a chaque fois que l'on crée une barre de navigation, on utilise les balises <nav>
+on lui attribuera la classe "navbar" et une couleur:
+
+    -   bg-light
+    -   bg-dark
+
+exemple
+
+    <nav class="navbar bg-dark">
+
+avec la classe "brand", je vais pouvoir accentuer un élement de ma navbar
+
+    <nav class="navbar navbar-light>
+        <div class="navbar-brand>contenu</div>
+    </nav>
+
+Je peux informer le navigateur de la couleur que doit prendre mon contenu avec la class "navbar-light"
+
+    -   navbar-light ->pour que le contenu soit écrit en foncé
+    -   navbar-dark -> pour que le contenu soit écrit en clair
+
+
+
+///////////////////////
+///   LES BADGES    ///
+///////////////////////
+
+avec la class "badge", on peut rajouter un petit encart pour attirer l'attention du visiteur.
+La classe s'accompagne de toutes les couleurs classiques de bootstrap
+
+    -   badge
+    -   badge-success
+    -   badge-primary
+    ... ...
+
+la taille du badge va s'adapter à la taille de l'élement auquel il est rattaché. On incluera ce badge dans une balise <span>
+
+    -   badge-pill
+
+badge avec bord arrondis
+
+////////////////////////////
+///   LES FORMULAIRES    ///
+////////////////////////////
+
+La doc bootstrap est trop fournie et parfois confuse, on va résumer tout ca ici
+
+on va partir sur un formulaire basique:
+        <form>
+            <label>Prénom</label>
+            <input type="text" name="prenom" placeholder="Saississez votre prénom"/>
+        </form>
+
+avec la class "form-group" on va indiquer à bootstrap quels sont les élèments qui sont ensemble.
+on va englober le label et l'input dans une div avec la class indiquée
+avec la classe "form-control" placé dans l'input, boostrap va pouvoir nous mettre en forme tout ça
+
+        <form>
+            <div class="form-group">
+                <label>Prénom</label>
+                <input type="text" name="prenom" placeholder="Saississez votre prénom" class="form-control"/>
+            </div>
+        </form>
+
+si pour une raison x, un champs input ne peut pas être modifié, je vais rajouter un attribut "readonly"
+
+        <form>
+            <div class="form-group">
+                <label>adresse email</label>
+                <input type="email" value="test@test.com" readonly placeholder="Saississez votre prénom" class="form-control"/>
+            </div>
+        </form>
+
+dans le cas ci-dessus, l'adresse mail sera indiquée à titre indicatif et ne pourra être modifiée (a savoir, on utilisera quand on sera au php
+
+les autres classes:
+
+    -   form-control-plaintext-> retirer la mise en forme d'un input
+    -   form-text-> afficher une information avant un input par exemple
+    -   input-group-prepand->ajouter quelque chose avant mon input à utiliser dans une div qui sera suivie directement par une autre div qui aura la classe:
+    -   input-group-text->voir la feuille composents.html dans lequel j'utilise un "@" avant l'input
+
+    
+
+*/
