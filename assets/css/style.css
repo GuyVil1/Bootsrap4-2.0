@@ -22,9 +22,9 @@ le "w-auto" va
 Pareil que le w-X, mais sur la hauteur, attention d'introduire alors une taille au body pour car l'élement sera calé sur cette taille.µ
 
 
-//////////////////////////////
-// LES CLASSES DE COULEURS  //
-//////////////////////////////
+///////////////////////////////////////
+// LES CLASSES DE COULEURS  DE FOND  //
+//////////////////////////////////////
 
 .bg-primary ->bleu
 .bg-secondary->gris
@@ -36,6 +36,64 @@ Pareil que le w-X, mais sur la hauteur, attention d'introduire alors une taille 
 .bg-dark->gris
 .bg-white->blanc
 .bg-transparent->transparent !!!
+
+////////////////////////////////////////
+// LES CLASSES DE COULEURS  DE TEXTE  //
+////////////////////////////////////////
+
+Même code que les classes précédentes mais on utilisera "text-" au lieu de "bg-"
+
+une nuance cependant, 
+
+text-body-> c'est une classe neutre, que je vais pouvoir modifier sur ma feuille css.
+-->EXEMPLE
+
+.text-body{
+    color: #32569;
+} <--
+
+Possible d'ajouter de l'opacité à son texte en ajoutant un attribut:
+
+text-info-50;
+text-warning-75;
+...
+
+////////////////////////////////////////
+// LES CLASSES DE MARGIN ET PADDING   //
+////////////////////////////////////////
+
+pour jouer sur les 4 cotés:
+
+m-  margin
+p-  padding
+
+si je veux isoler un coté de mon élément
+
+t- top
+b- bottom
+l- left
+r- right
+x- left et right
+y- top et bottom
+
+on complète ces classe avec un numéro:
+
+0 -> aucun padding sur mon element
+1 -> un espacement $spacer de .25
+2 -> $spacer de .50
+3 -> $spacer de 1
+4 -> $spacer de 1.5
+5 -> $spacer de 3
+auto
+
+Dans l'absolu, pour rajouter une classe on procède de la sorte
+
+m-2
+p-5
+mt-1
+pb-3
+...
+
 
 
 
