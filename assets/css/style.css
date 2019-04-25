@@ -1,0 +1,43 @@
+/* Récapitulatif des différentes classe relative à bootstrap
+
+//////////////////////////////
+// LES CLASSES DE TAILLES   //
+//////////////////////////////
+
+"w-25"
+"w-50"
+"w-75"
+"w100"
+"w-auto"
+
+va redimmensionner les éléments à 25-50-75 ou 100% de leur LARGEUR d'origine
+le "w-auto" va 
+
+"h-25"
+"h-50"
+"h-75"
+"h-100"
+"h-auto"
+
+Pareil que le w-X, mais sur la hauteur, attention d'introduire alors une taille au body pour car l'élement sera calé sur cette taille.µ
+
+
+//////////////////////////////
+// LES CLASSES DE COULEURS  //
+//////////////////////////////
+
+.bg-primary ->bleu
+.bg-secondary->gris
+.bg-success->vert
+.bg-danger->rouge
+.bg-warning->orange
+.bg-info->autre ton de bleu
+.bg-light->blanc-pâle
+.bg-dark->gris
+.bg-white->blanc
+.bg-transparent->transparent !!!
+
+
+
+
+*/
