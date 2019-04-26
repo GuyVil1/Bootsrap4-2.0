@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<p>
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,15 +48,19 @@
                 Bienvenue sur Tesla. Ce site est en maintenance.
                 <hr>
                 <!-- ICI : les deux boutons -->
-                <div class="btn-group mx-auto dblock">
-                    <button type="button" class="btn btn-lg bg-danger text-white">Suivre les changements</button>
-                    <button type="button" class="btn btn-lg bg-success text-white">Nous contacter</button>
+                <div class="btn-group mx-auto btn-block">
+                    <a class="btn btn-lg bg-danger text-white" href="#">Suivre les changements</a>
+                    <a class="btn btn-lg bg-success text-white" href="#">Nous contacter</a>
                 </div>  
             </div>
         </div>
         
-        <nav>
+        <nav aria-label="breadcrumb">
     <!-- ICI : fil d'ariane -->
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active"><a href="#">Accueil</a> </li>
+                <li class="breadcrumb-item"><a style='color: gray' href="#">Maitnenance</a> </li>
+            </ol>
             
         </nav>
         
@@ -70,25 +74,54 @@
         <div class="container">
         
         <!-- ICI : les cartes --> 
-        
-            <div>
-                <img src="assets/img/Tesla-alert.png" alt="...">
+        <div class="card-deck">
+            <div class="card bg-secondary">
+                <img class="card-img-top" src="assets/img/Tesla-alert.png" alt="...">
+                <div class="card-body">
+                    <div class="card-titel text-white">Nouveautés</div>
+                    <div class="card-text text-white">Vous pourrez bientôt acheter des fusées pour aller sur la lune</div>
+                </div>
             </div>
-        
-            <div>
-                <img src="assets/img/Tesla-alert.png" alt="...">
+
+            <div class="card bg-secondary">
+                <img class="card-img-top" src="assets/img/Tesla-alert.png" alt="...">
+                <div class="card-body">
+                    <div class="card-titel text-white">Nouveautés</div>
+                    <hr>
+                    <div class="card-text text-white">Les 30 premiers acheteurs de fusées repartiront avec Elon Musk</div>
+                </div>
             </div>
-            
         </div>
         
     </section>
     
     <!-- TROISIEME SECTION -->
-    <section>
-        <div style="width: 400px">
+    <section class="text-white bg-dark p-5 mt-3">
+        <div style="width: 400px" class="mx-auto">
             <h2>Contactez-nous</h2>
     <!-- ICI : formulaire -->
+            <form>
+                <div class="form-group">
+                    <label for="">Adresse email</label>
+                    <input type="email" class="form-control" placeholder="Entrez votre adresse email">
+                    <small class="form-text">Nous ne partagerons pas votre adresse email</small>
+                </div>
+                <div class="form-group">
+                    <label for="">Message</label>
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-light">Soumettre</button>
+            </form>
         </div>
     </section>
     
     <!-- ICI : pied de page -->
+    <footer class="bg-secondary">
+        <div class="container">
+            <p class="p-3">2019©Tesla</p>
+        </div>
+    </footer>
+    </html>
+    
+
+    
