@@ -201,4 +201,65 @@ Les classes de bases sont:
     -   card-text-> le contenu de ma carte
 
 
+//////////////////////////////////////
+///   LES BARRES DE PROGRESSION    ///
+//////////////////////////////////////
+
+    <div class="progress">
+    <div class="progress-bar" role=progressbar style="25%" ariavaluenow="25"/>
+    </div>
+
+LES CLASSE A RETENIR
+
+    -   progress-> dans un div qui englobe toute ma barre
+    -   progress-bar->dans la div qui contient progress
+    -   progress-bar-striped-> la barre de progression sera hachurée
+    -   style="width: X%"->remplissage de ma barre à X%
+    -   role="progressbar"-> facultatif
+    
+
+
+possibilité de faire des barres mutliple, cad une barre comprenant plusieurs couleur, il suffit d'inclure
+d'autres div="progress-bar" à l'intérieur de la div "progress"
+
+
+///////////////////////
+///   BREADCRUMB    ///
+///////////////////////
+
+C'est une autre sorte de barre de navigation, une espece de fil d'arianne sur lequel se trouve des liens qui mènent vers d'autres pages
+
+    <nav aria-label="breadcrumb">
+        <ol class=breadcrumb>
+            <li class="bread-crumb-item active" aria-current="page">HOME</li>
+        </ol>
+    </nav>
+
+aria-label et aria-current sont facultatif, les class importante:
+
+    -   breadcrumb-> dans les ol
+    -   breadcrum-item-> dans les li
+    -   active-> marque la page sur laquelle on se trouve.
+
+    
+
+
+
+
+
+*/
+
+/* Hello Arnaud, je pose ma candidature pour action-commando.
+J'aimerai vraiment en être. Tu sais déjà que je suis orienté client, que je n'ai pas peur de faire des heures.
+et que je vais me couper en 4 pour tenir les objectifs qui seront fixés.
+Je suis actuellement en pleine révision de mes acquis, mon programme à l'heure actuelle est-celui-ci:
+jusqu'à dimanche -> Bootstrap 4.0
+du 29/04 au 05/05-> Javascript
+du 06/05 au 19/05-> React
+du 20/05 au 01/06-> mise en place du projet perso avec ces 3 technos et un soupçon de php (formulaire de contact).
+
+Pourquoi je veux en être? Parce que ça va me permettre de me placer en situation et 
+
+
+
 */
