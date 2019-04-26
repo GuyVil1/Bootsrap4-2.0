@@ -166,6 +166,39 @@ les autres classes:
     -   input-group-prepand->ajouter quelque chose avant mon input à utiliser dans une div qui sera suivie directement par une autre div qui aura la classe:
     -   input-group-text->voir la feuille composents.html dans lequel j'utilise un "@" avant l'input
 
-    
+////////////////////////////
+///   LES JUMBOTRONS     ///
+////////////////////////////
+
+
+la classe jumbotron permet de créer un bloc qui va nous permettre de claquer un contenu qui va se différencer du contenu principal
+une bonne manière d'attirer l'attention du visiteur sur une information particulière.
+
+les classes liées au jumbotron sont:
+
+    -   jumbotron-> classe à caler dans une div
+    -   display-4-> titre du jumbotron
+    -   lead->sous-titre, l'épaisseur du font sera plus fine
+
+ATTENTION IDEALEMENT, ON PLACE LE JUMBOTRON EN DEHORS D'UN SECTION, CE QUI CHANGE RADICALEMENT SON DESIGN
+SUR LA PAGE HTML DEDIEE, LE PREMIER JUMBOTRON EST DANS UNE SECTION, LE SECOND EST TEL QU'IL DEVRAIT ËTRE CONFIGURE
+
+
+
+////////////////////////////////////
+///   LES CARTES D'AFFICHAGE     ///
+////////////////////////////////////
+
+
+Avec la class cards les possibilités de design sont trop importante que pour tout développer dans ce recap des 
+fonctions importantes. Ne pas hésiter à retourner dans la doc pour découvrir tout le potentiel de cette class.
+Les classes de bases sont:
+
+    -   card-> va contenir tous les éléments de ma carte
+    -   card-header->Vrai titre de ma carte
+    -   card-body->le corps de ma carte
+    -   card-title->faux titre de ma carte
+    -   card-text-> le contenu de ma carte
+
 
 */
