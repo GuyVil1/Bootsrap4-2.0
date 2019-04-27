@@ -1,0 +1,156 @@
+/*
+
+//////////////////////////////
+////   LES ANIMATIONS    /////
+//////////////////////////////
+
+
+
+POUR UTILISER LES ANIMATIONS, IMPORTER LES SCRIPT JS JQUERY ET POPPER LIES A BOOTSTRAP
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+//////////////////////
+//// LES POPUPS  /////
+//////////////////////
+
+    on crée un bouton classique sur lequel on peut mettre plusieurs attribut:
+
+        -   data-toggle
+        qui peut prendre plusieurs valeurs:
+
+        -   data-toggle="modal" -> ouvre une fenêtre modale
+        -   data-toggle="dropdown" -> un menu déroulant
+        -   data-toggle="tab" -> ouvre des onglets
+
+        autre attibut, le data-target
+
+        -   data-target->va cibler quelle fenêtre l'élement va ouvrir; on défnira l'id de l'élement choisi
+
+exemple data-target="#test"
+
+on met notre élement cible test dans une div contenant la classe "modal"
+
+        <div class="modal" id="test">contenu </div>
+
+dans cette div, on va mettre plusieurs autre div avec les classes suivantes
+
+        -   modal-dialog-> classe du popup 
+        PEUT ETRE SUIVIE DE
+        -   modal-dialog-centered-> pour centrer mon popup sur ma page
+        -   modal-sm-> petite fenetre popup
+        -   modal-lg-> moyen popup
+        -   modal-xl-> vraiment large
+
+        -   modal-content-> le contenu de notre div dialog
+        -   modal-header-> titre de notre contenu
+        -   modal-title-> permet de gérer le titre qui sera inclu dans une balise h par exemple
+        -   close-> a utiliser sur un bouton par exemple, pour fermer le popup
+        -   data-dismiss-> à utiliser à la suite de la classe close et cibler l'élement à clore dans ce cas le modal
+
+        exemple
+        <button class="close" data-dismiss="modal">&times;</button>
+
+        le &times; qui est inclus dans la balise button renverra une petite croix cliquable
+
+        On continue
+
+        -   modal-body->les informations principales que je veux afficher dans mon popup
+        -   modal-footer->la fin de mon modal dans lequel je peux là aussi mettre un bouton pour fermer mon popup (voir exemple)
+
+
+////////////////////////////
+////   LES CAROUSSELS   ////
+////////////////////////////
+
+Un carroussels, c'est un ensemble d'images qui vont se succéder, on va le déclarer avec les classes
+
+    -   carousel
+    -   slide
+
+Pour que cette div se comporte comme un carrousel, on lui rajoute un autre attribut
+
+    -   data-ride="carousel"
+
+
+on va nommer notre carousel avec un id
+
+dans cette div, on va utiliser d'autres div avec les classes:
+
+    -   carousel-inner->qui va contenir l'ensemble de nos slides
+    -   carousel-item->un element de notre caroussel, 
+le premier élement de notre carroussel aura en plus de la classe item, la classe 
+    -   active
+Si je mets une image, idealement rajouter à cette image la classe "d-block" et une taille "w-100"
+A l'interieur de la div qui contient mon image, je peux rajoute une div avec la class
+    -   carousel-caption
+pour inclure le texte à afficher sous l'image (dans une balise h5 par exemple)
+
+en dessous de mon contenu, je peux rajouter une balise à qui contiendra deux attributs et l'id de notre carrousel qui sera dans un href;
+
+une classe:
+    -   carousel-control-prev->slide précédent
+    -   carousel-control-next->slide suivant
+
+et l'attribut
+
+    -   data-slide="prev"
+    -   data-slide="next"
+
+Je peux rajouter aussi des icones
+
+    -   carousel-control-prev-icone
+    -   carousel-control-next-icone
+
+    exemple voir page html, dans ce cas précis, j'aurai mis une mention prévious sur la gauche et une icone next sur la droite
+
+
+    si je préfére avoir des curseurs pour passer d'un image à l'autre, avant ma div "carousel-inner", je peux créer une liste "ol" pour y inscrire les infos
+
+    <ol class="carousel-indicators">
+        <li data-target="#id de mon carroussel" data-slide-to="0" class="active"></li>
+        <li data-target="#id de mon carroussel" data-slide-to="1"></li>
+    </ol>
+
+
+///////////////////////////
+///   LES INFOBULLES   ////
+///////////////////////////
+
+RAJOUTER UN SCRIPT JS A LA PAGE SUR LAQUELLE L'INFOBULLE DOIT ËTRE AFFICHE (OU DANS VOTRE FEUILLE .JS)
+
+$(function () {
+    $('[data-toggle="popover"]').popover()
+})
+
+comme pour le popup, pour déclarer une infobulle, on utilise la classe data-toggle mais cette fois, ce sera popover qui sera déclaré
+suivi d'un attribut: data-placement et d'un attribut data-content et d'un attribut title
+
+    -   data-toggle="popover"-> déclare l'infobulle
+    -   data-placement="top"-> infobulle placée en haut de mon élement
+    -   data-placement='bottom"
+    -   data-placement='left
+    -   data-placement="rigth'
+    -   data-content="contenu à afficher"->inscrire le contenu que vous voulez lier au popover
+    -   data-title="contenu"-> titre de mon infobulle
+
+    AUTRE TYPE D'INFOBULLES LE TOOLTIP
+
+pour l'activer, copier ce script dans la feuille html ou l'infobulle sera activée
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    au lieu d'un data-toggle="popover", on utlisera=
+
+    -   data-toggle="tooltip"
+
+    toutes les class / attribut vu avant reste valide.
+    L'action du tooltip déclenchera l'infobulle juste en passant le curseur sur l'élément
+
+*/
