@@ -1,0 +1,75 @@
+/*
+
+////////////////////////////////////
+///// LES GRILLES EN BOOTSTRAP  ////
+////////////////////////////////////
+
+
+on peut utiliser les grilles bootstrap dans une classe container... ou pas.
+La classe container permet de faire en sorte de centrer nos élements au milieu de la page.
+
+on verra ça un peu plus tard
+
+pour utiliser les grilles bootstrap, on doit d'abord initailiser une ligne avec la classe "row"
+ça nous permettra de savoir quels blocs se trouvent à coté des autres.
+
+Avec la classe col, je vais créer une colonne de contenu, dans mon row, toutes colonnes que je créerai vont se mettre les 
+unes à coté des autres en se répartissant la largeur de la page.
+dans une largeur de page j'ai 12 colonnes, je peux décider de la largeur d'une colonne en lui donnant une valeur comprise entre 1 et 12
+
+je dois répartir ces 12 unités entre tous les block qui seront inclus dans ma div "row".
+
+pour trois colonnes par exemple:
+
+- la permiere fera 6
+- la seconde 3
+- et le dernière 3
+
+avant d'indiquer la largeur de ma colonne, je peux indiquer pour quelle types d'écran cette largeur sera valable, ça me permet de 
+designer précisément mon contenu pour chaque type d'écrans
+
+5 types d'écran:
+
+    -   xs-> très petits <576px pour une taille du contenair de autopx
+    -   sm-> smartphones >=576px pour une taille du contenair de 540px
+    -   md-> tablettes >=768px pour une taille du contenair de 720px
+    -   lg-> pc classiques >=992px pour une taille du contenair de 960px
+    -   xl-> écran large >= 1200px pour une taille du contenair de 1140px
+
+on ajoutera col- suivi de la taille de l'écran, suivi d'un -X, x étant une valeur comprise entre 1 et 12
+
+exemple
+
+    class="col-xl-6" -> sur une écran de taille >=1200px, cette colonne s'étendra sur 6 unités
+
+les classes:
+
+    -   row->indiquer que les block de contenus inclus dans cette div seront les uns a coté des autres
+    -   col-> va créer une colonne de contenu
+
+
+////////////////////////////////////
+/////  PRIORISER NOS ELEMENTS   ////
+////////////////////////////////////
+
+avec la class order, je vais pouvoir décider de l'ordre d'apparition de mes colonnes
+
+    -   order-1
+    -   order-2
+    - ...
+
+////////////////////////////////////
+/////  DECALLER NOS ELEMENTS    ////
+////////////////////////////////////
+
+avec la classe offset qui prendra aussi une valeur comprise entre 1 et 12
+
+    -   offset-md-4 -> sur un écran médium, il y aura 4 colonnes vide avant l'affichage de cet élèment
+
+dans l'absolu, je pourrai aussi créer une div vide qui aurait une largeur comprise entre 1 et 12 pour créer un décalage, mais le offset est plus propre
+
+
+
+
+
+*/
