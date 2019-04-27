@@ -153,4 +153,39 @@ pour l'activer, copier ce script dans la feuille html ou l'infobulle sera activ�
     toutes les class / attribut vu avant reste valide.
     L'action du tooltip déclenchera l'infobulle juste en passant le curseur sur l'élément
 
+/////////////////////
+///  LES SPOILER  ///
+/////////////////////
+
+    -   data-toggle="collapse"
+    -   data-target="#id du spoiler"
+
+    la div qui contiendra l'id du spoiler doit aussi se voir attribuer la classe "collapse"
+
+pour les spoiler caché derrière une balise <a>, on n'utilise par data-target, mais on met dans le href l'id vers lequel on a caché notre spoiler
+
+Si on veut dévoiler plusieur spoiler derrière un boutton, on attribuera une classe fictive au spoiler que l'on veut dévoir en un clic
+et on appelera cette classe fictive en data-target (voir exemple)
+
+
+/////////////////////////
+/// LES DROPDOWN    /////
+/////////////////////////
+
+pour faire des listes déroulantes (pour un menu par exemple, mais pas seulement)
+
+    -   dropdown-> classe a attribuer à une div qui contiendra notre liste
+    -   dropdown-toggle->a attribuer au bouton qui cachera notre liste
+    -   data-toggle-> attribut à placer dans le bouton qui cachera notre liste
+    -   dropdown-menu->a attribuer à la div qui contiendra notre liste
+    -   dropdown-item-> a attribuer aux élements de notre liste
+
+VOIR AUSSI EXEMPLE QUI PERMET DE FAIRE UN CHOIX MULTIPLE
+
+
+
+
+
+
+
 */
