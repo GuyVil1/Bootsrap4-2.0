@@ -182,6 +182,21 @@ pour faire des listes déroulantes (pour un menu par exemple, mais pas seulement
 
 VOIR AUSSI EXEMPLE QUI PERMET DE FAIRE UN CHOIX MULTIPLE
 
+///////////////////////////////
+/// LES OPTIONS JAVASCRIPT ////
+///////////////////////////////
+
+    dans les progress-bar, une fois que le js est inclus dans notre page, on rajoute ka classe
+
+    -   progress-bar-animated
+
+    dans une navbar
+
+    -   navbar-toogler-> va cacher les éléments de ma liste dans un menu déroulant qui sera à droite de ma navabar
+    -   navbar-expend-sm/lg/md/xl-> indique à partir de quelle longueur d'écran les élements doivent être caché
+
+VOIR EXEMPLE POUR UNE NAVBAR COMPLETE
+
 
 
 

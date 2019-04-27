@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Boostrap-Potter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/js/jquery-3.3.1.min.js">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/js/bootstrap.min.js">
+    <link rel="stylesheet" type="text" href="assets/js/script.js">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- <script src="main.js"></script> -->
+</head>
+
+    <body>
+
+<!-- PREMIERE ETAPE -->
+        <header class="w-100" style="background-image: url('assets/img/potter/bg-poudlard.jpg'); background-size: cover; background-position: center">
+            <img src="assets/img/potter/logo.png" class="d-block mx-auto p-5 w-75" alt="logo" />
+        </header>
+
+<!-- DEUXIEME ETAPE -->
+        <nav class="navbar navbar-dark navbar-expand-sm bg-dark mt-1 text-white">
+            <div class="container">
+            <div>Portail</div>
+<!-- NE PAS TOUCHER (boutton en responsive : oui je suis gentil) -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarText">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+      <!-- LES LIENS (Je vous laisse l'ID navbarText, mais pensez aux classes) -->
+      <div id="navbarText">
+        <ul>
+          <li>
+            <a>Accueil</a>
+          </li>
+          <li>
+            <a>Boutique du château</a>
+          </li>
+          <li>
+            <a>Boutique d'Ollivander</a>
+          </li>
+          <li>
+            <a>Dossier d'inscription</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- TROISIEME ETAPE / UTILISER LA GRILLE BOOTSTRAP -->
+  <section style="background-image: url('https://believemy.com/uploads/f536b82491a5a3c07e60cf2b977ded35_03b49c2a70d5bf98d966a517f96cfb87.jpeg')">
+    <div class="container">
+      <div>
+        <div>
+          <h3>Inscriptions ouvertes<span>Année 2180-2181</span></h3>
+          
+          <div>
+            <button>
+              Documents
+            </button>
+            <div>
+              <a>Dossier d'inscription</a>
+              <a>Règlement intérieur</a>
+              <a>Documents concernant l'internat</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- QUATRIEME ETAPE -->
+  <section>
+    <div class="container">
+    
+      <h2>Meilleures ventes</h2>
+      
+      <!-- UTILISER LA CLASSE POUR REGROUPER LES CARTES / PAS LA GRILLE BOOTSTRAP -->
+      <div>
+        <div>
+          <img src="https://believemy.com/uploads/e1ff85ab9cd49ddc4bc50c80900e904d_3ef8b3485482ff65551fc3cc7454dc8b.jpeg" />
+          <div>
+            <h5>Echarpe deluxe Harry Potter Gryffondor pourpre et or</h5>
+          </div>
+          <div>
+            <button>Acheter</button>
+          </div>
+        </div>
+        
+        <div>
+          <img src="https://believemy.com/uploads/fab0785c6b803bfa89e7111d9deb0368_eb623574496b3cd82b5b358539f6b1eb.jpeg" />
+          <div>
+            <h5>La Coupe des 3 Sorciers</h5>
+          </div>
+          <div>
+            <button>Acheter</button>
+          </div>
+        </div>
+        
+        <div>
+          <img src="https://believemy.com/uploads/34eaaa344edf7411a830f8946dc5fe67_ba6103b0bb201f60b88b8e033db25c7e.jpeg" />
+          <div>
+            <h5>Baguette magique de Harry Potter avec boîte Ollivander</h5>
+          </div>
+          <div>
+            <button>Acheter</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CINQUIEME ETAPE -->
+  <footer>
+    <div class="container">
+      2019 © Harry Potter
+    </div>
+  </footer>
+  
+  <!-- MODAL --->
+  <div id="echarpeModal">
+    <div>
+      <div>
+        <div>
+          <h5>Echarpe deluxe Harry Potter Gryffondor pourpre et or</h5>
+          <button>
+            <span>&times;</span>
+          </button>
+        </div>
+        <div>
+          <img src="https://believemy.com/uploads/e1ff85ab9cd49ddc4bc50c80900e904d_3ef8b3485482ff65551fc3cc7454dc8b.jpeg" />
+        </div>
+        <div>
+          <button>Fermer</button>
+          <button>Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="coupeModal">
+    <div>
+      <div>
+        <div>
+          <h5>La Coupe des 3 Sorciers</h5>
+          <button>
+            <span>&times;</span>
+          </button>
+        </div>
+        <div>
+          <img src="https://believemy.com/uploads/fab0785c6b803bfa89e7111d9deb0368_eb623574496b3cd82b5b358539f6b1eb.jpeg" />
+        </div>
+        <div>
+          <button>Fermer</button>
+          <button>Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="baguetteModal">
+    <div>
+      <div>
+        <div>
+          <h5>Baguette magique de Harry Potter avec boîte Ollivander</h5>
+          <button>
+            <span>&times;</span>
+          </button>
+        </div>
+        <div>
+          <img src="https://believemy.com/uploads/34eaaa344edf7411a830f8946dc5fe67_ba6103b0bb201f60b88b8e033db25c7e.jpeg" />
+        </div>
+        <div>
+          <button>Fermer</button>
+          <button>Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- script pour animation js / Jquery -->
+    <script>$(function () {
+        $('[data-toggle="popover"]').popover()
+    })</script>
+    
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })</script>
+    </body>
+</html>
