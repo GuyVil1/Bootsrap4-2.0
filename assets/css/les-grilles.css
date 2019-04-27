@@ -68,8 +68,17 @@ avec la classe offset qui prendra aussi une valeur comprise entre 1 et 12
 
 dans l'absolu, je pourrai aussi créer une div vide qui aurait une largeur comprise entre 1 et 12 pour créer un décalage, mais le offset est plus propre
 
+////////////////////////////////////
+/////  ALIGNER VERTICALEMENT    ////
+////////////////////////////////////
 
-
+    -   align-self-> pour aligner un élement
+    -   align-item-> pour aligner les elements contenu dans la div portant la classe
+    
+    suivi de 
+    -   center
+    -   start-> aligner en haut
+    -   end-> aligner en bas
 
 
 */
