@@ -21,33 +21,33 @@
     <body>
 
 <!-- PREMIERE ETAPE -->
-        <header class="w-100" style="background-image: url('assets/img/potter/bg-poudlard.jpg'); background-size: cover; background-position: center">
+        <header class="w-100 p-5" style="background-image: url('assets/img/potter/bg-poudlard.jpg'); background-size: cover; background-position: center; margin-bottom:-5px;">
             <img src="assets/img/potter/logo.png" class="d-block mx-auto p-5 w-75" alt="logo" />
         </header>
 
 <!-- DEUXIEME ETAPE -->
-        <nav class="navbar navbar-dark navbar-expand-sm bg-dark mt-1 text-white">
+        <nav class="navbar navbar-dark navbar-expand-sm sticky-top bg-dark mt-1 text-white">
             <div class="container">
-            <div>Portail</div>
+            <div class="navbar-brand">Portail</div>
 <!-- NE PAS TOUCHER (boutton en responsive : oui je suis gentil) -->
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarText">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
       <!-- LES LIENS (Je vous laisse l'ID navbarText, mais pensez aux classes) -->
-      <div id="navbarText">
-        <ul>
-          <li>
-            <a>Accueil</a>
+      <div id="navbarText" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link">Accueil</a>
           </li>
-          <li>
-            <a>Boutique du château</a>
+          <li class="nav-item">
+            <a class="nav-link">Boutique du château</a>
           </li>
-          <li>
-            <a>Boutique d'Ollivander</a>
+          <li class="nav-item">
+            <a class="nav-link">Boutique d'Ollivander</a>
           </li>
-          <li>
-            <a>Dossier d'inscription</a>
+          <li class="nav-item">
+            <a class="nav-link">Dossier d'inscription</a>
           </li>
         </ul>
       </div>
@@ -55,20 +55,20 @@
   </nav>
   
   <!-- TROISIEME ETAPE / UTILISER LA GRILLE BOOTSTRAP -->
-  <section style="background-image: url('https://believemy.com/uploads/f536b82491a5a3c07e60cf2b977ded35_03b49c2a70d5bf98d966a517f96cfb87.jpeg')">
+  <section style="background-image: url('assets/img/potter/bg-magasin.jpg')">
     <div class="container">
-      <div>
-        <div>
-          <h3>Inscriptions ouvertes<span>Année 2180-2181</span></h3>
+      <div class="row">
+        <div class="col-md-12 text-white p-5">
+          <h3 class="text-center">Inscriptions ouvertes<span class="d-block font-weight-light mt-5">Année 2180-2181</span></h3>
           
-          <div>
-            <button>
+          <div class="dropdown text-center">
+            <button class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown">
               Documents
             </button>
-            <div>
-              <a>Dossier d'inscription</a>
-              <a>Règlement intérieur</a>
-              <a>Documents concernant l'internat</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item">Dossier d'inscription</a>
+              <a class="dropdown-item">Règlement intérieur</a>
+              <a class="dropdown-item">Documents concernant l'internat</a>
             </div>
           </div>
         </div>
@@ -77,40 +77,40 @@
   </section>
   
   <!-- QUATRIEME ETAPE -->
-  <section>
+  <section class="bg-light p-4">
     <div class="container">
     
       <h2>Meilleures ventes</h2>
       
       <!-- UTILISER LA CLASSE POUR REGROUPER LES CARTES / PAS LA GRILLE BOOTSTRAP -->
-      <div>
-        <div>
-          <img src="https://believemy.com/uploads/e1ff85ab9cd49ddc4bc50c80900e904d_3ef8b3485482ff65551fc3cc7454dc8b.jpeg" />
-          <div>
-            <h5>Echarpe deluxe Harry Potter Gryffondor pourpre et or</h5>
+      <div class="card-deck">
+        <div class="card m-3">
+          <img src="assets/img/potter/echarpe.jpg" class="card-img-top"/>
+          <div class="card-body">
+            <h5 class="card-title">Echarpe deluxe Harry Potter Gryffondor pourpre et or</h5>
           </div>
-          <div>
-            <button>Acheter</button>
-          </div>
-        </div>
-        
-        <div>
-          <img src="https://believemy.com/uploads/fab0785c6b803bfa89e7111d9deb0368_eb623574496b3cd82b5b358539f6b1eb.jpeg" />
-          <div>
-            <h5>La Coupe des 3 Sorciers</h5>
-          </div>
-          <div>
-            <button>Acheter</button>
+          <div class="card-footer">
+            <button class="btn btn-block btn-outline-secondary" data-toggle="modal" data-target="#echarpeModal">Acheter</button>
           </div>
         </div>
         
-        <div>
-          <img src="https://believemy.com/uploads/34eaaa344edf7411a830f8946dc5fe67_ba6103b0bb201f60b88b8e033db25c7e.jpeg" />
-          <div>
-            <h5>Baguette magique de Harry Potter avec boîte Ollivander</h5>
+        <div class="card m-3">
+          <img src="assets/img/potter/coupe.jpg" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">La Coupe des 3 Sorciers</h5>
           </div>
-          <div>
-            <button>Acheter</button>
+          <div class="card-footer">
+            <button class="btn btn-block btn-outline-secondary" data-toggle="modal" data-target="#coupeModal">Acheter</button>
+          </div>
+        </div>
+        
+        <div class="card m-3">
+          <img src="assets/img/potter/baguette.jpg" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">Baguette magique de Harry Potter avec boîte Ollivander</h5>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-block btn-outline-secondary" data-toggle="modal" data-target="#baguetteModal">Acheter</button>
           </div>
         </div>
       </div>
@@ -118,68 +118,68 @@
   </section>
   
   <!-- CINQUIEME ETAPE -->
-  <footer>
+  <footer class="bg-dark text-light p-3 text-right">
     <div class="container">
       2019 © Harry Potter
     </div>
   </footer>
   
   <!-- MODAL --->
-  <div id="echarpeModal">
-    <div>
-      <div>
-        <div>
-          <h5>Echarpe deluxe Harry Potter Gryffondor pourpre et or</h5>
-          <button>
+  <div class="modal fade" id="echarpeModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Echarpe deluxe Harry Potter Gryffondor pourpre et or</h5>
+          <button class="close" data-dismiss="#echarpeModal">
             <span>&times;</span>
           </button>
         </div>
-        <div>
-          <img src="https://believemy.com/uploads/e1ff85ab9cd49ddc4bc50c80900e904d_3ef8b3485482ff65551fc3cc7454dc8b.jpeg" />
+        <div class="modal-body">
+          <img class="w-100" src="assets/img/potter/echarpe-deluxe.jpg" />
         </div>
-        <div>
-          <button>Fermer</button>
-          <button>Ajouter au panier</button>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Bientôt disponible">Ajouter au panier</buttonclass>
         </div>
       </div>
     </div>
   </div>
   
-  <div id="coupeModal">
-    <div>
-      <div>
-        <div>
-          <h5>La Coupe des 3 Sorciers</h5>
-          <button>
+  <div id="coupeModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">La Coupe des 3 Sorciers</h5>
+          <button class="close" data-dismiss="#coupeModal">
             <span>&times;</span>
           </button>
         </div>
-        <div>
-          <img src="https://believemy.com/uploads/fab0785c6b803bfa89e7111d9deb0368_eb623574496b3cd82b5b358539f6b1eb.jpeg" />
+        <div class="modal-body">
+          <img class="w-100" src="assets/img/potter/coupe.jpg"/>
         </div>
-        <div>
-          <button>Fermer</button>
-          <button>Ajouter au panier</button>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Bientôt disponible">Ajouter au panier</button>
         </div>
       </div>
     </div>
   </div>
   
-  <div id="baguetteModal">
-    <div>
-      <div>
-        <div>
-          <h5>Baguette magique de Harry Potter avec boîte Ollivander</h5>
-          <button>
+  <div id="baguetteModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Baguette magique de Harry Potter avec boîte Ollivander</h5>
+          <button class="close" data-dismiss="#baguetteModal">
             <span>&times;</span>
           </button>
         </div>
-        <div>
-          <img src="https://believemy.com/uploads/34eaaa344edf7411a830f8946dc5fe67_ba6103b0bb201f60b88b8e033db25c7e.jpeg" />
+        <div class="modal-body">
+          <img class="w-100" src="assets/img/potter/baguette.jpg" />
         </div>
-        <div>
-          <button>Fermer</button>
-          <button>Ajouter au panier</button>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Bientôt disponible">Ajouter au panier</button>
         </div>
       </div>
     </div>
